@@ -16,6 +16,6 @@ public class HelloController {
     public String sayBye(@PathVariable String name,
                          @PathVariable int age,
                          @PathVariable String profession){
-        return "Bye World! Name: " + name + " Age: " + age + " Profession: " + profession;
+        return "Bye World! Your Name: " + name + " Your Age: " + age + " Your Profession: " + profession;
     }
 }
