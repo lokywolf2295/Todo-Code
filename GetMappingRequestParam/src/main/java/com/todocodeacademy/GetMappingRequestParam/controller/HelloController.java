@@ -14,4 +14,11 @@ public class HelloController {
                          @RequestParam String profession){
         return "Hello World! Name: " + name + " Age: " + age + " Profession: " + profession;
     }
+
+    @GetMapping("/sum/{num1}/{num2}")
+    public String exerciseOne(@PathVariable int num1,
+                           @PathVariable int num2){
+        int sum = num1 + num2;
+        return "The sum of Number 1: " + num1 + " + Number 2: " + num2 + " is: " + sum;
+    }
 }
