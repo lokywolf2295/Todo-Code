@@ -2,6 +2,8 @@ package com.todocodeacademy.EjercicioIntegradorN3.model;
 
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Data
 public class Patient {
 
@@ -9,9 +11,9 @@ public class Patient {
     private String dni;
     private String name;
     private String lastName;
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
 
-    public Patient(long id, String dni, String name, String lastName, String dateOfBirth) {
+    public Patient(long id, String dni, String name, String lastName, LocalDate dateOfBirth) {
         this.id = id;
         this.dni = dni;
         this.name = name;
