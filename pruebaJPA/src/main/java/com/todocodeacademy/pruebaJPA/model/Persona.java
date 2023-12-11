@@ -1,14 +1,8 @@
-
 package com.todocodeacademy.pruebaJPA.model;
 
-
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.Entity;
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 
 @Getter @Setter
 @Entity
