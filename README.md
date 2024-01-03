@@ -16,7 +16,26 @@ El equipo detras de camara está conformado por:
 
 <b>Luisina de Paula:</b> Ingeniera y Profesora en informática
 
-<b>Gabriel Guismín:</b> Ingeniero en informática
+<b>Gabriel Guismín:</b> Ingeniero en informática<br>
+<br>
+<h4>Los temas dados hasta el momento son:</h4>
+<br>
+<h5>Introducción al mundo Web</h5>
 
+<ul>
+    <li>¿Cómo funciona la WEB? Arquitectura Cliente-Servidor<br></li>
+    <li>Protocolo HTTP: Métodos GET, POST, DELETE y PUT<br></li>
+    <li>Librerías vs Frameworks<br></li>
+    <li>Introducción a Maven<br></li>
+</ul>
+<br>
+<h5>Introducción a Spring Boot</h5>
+<ul>
+    <li>Introducción a Spring Framework<br></li>
+    <li>Spring Vs. Spring Boot<br></li>
+    <li>¡Primer proyecto con Spring Boot!<br></li>
+    <li>Patrón MVC<br></li>
+    <li>Introducción a las APIs Rest<br></li>
+</ul>
 
 #
