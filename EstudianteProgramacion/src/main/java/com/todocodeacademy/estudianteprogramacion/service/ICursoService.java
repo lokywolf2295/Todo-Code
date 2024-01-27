@@ -13,7 +13,7 @@ public interface ICursoService {
     public List<Curso> getCursos();
 
     //metodo para encontrar los cursos que contengan una palabra
-    public List<Curso> findCurso(String palabra, Curso curso);
+    public List<Curso> findCursoByName(String palabra, Curso curso);
 
     //metodo para encontrar un curso por id
     public Curso findCursoById(Long id_curso);
