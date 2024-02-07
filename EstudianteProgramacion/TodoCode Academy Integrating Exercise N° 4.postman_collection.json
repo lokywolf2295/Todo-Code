@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "804ffe53-71af-4aac-9fdf-53a2f5da8845",
+		"name": "TodoCode Academy Integrating Exercise N° 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26002575"
+	},
+	"item": [
+		{
+			"name": "Curso",
+			"item": [
+				{
+					"name": "traer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cursos/traer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursos",
+								"traer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traer por nombre",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cursos/buscar/programación",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursos",
+								"buscar",
+								"programación"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Programación\",\r\n    \"modalidad\":\"Virtual - Sincrónica\",\r\n    \"fecha_finalizacion\": \"2023-12-22\",\r\n    \"listaDeTemas\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cursos/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cursos/borrar/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursos",
+								"borrar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar_con_objeto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_curso\":\"1\",\r\n    \"nombre\":\"Programacion\",\r\n    \"modalidad\":\"Virtual - Sincronica\",\r\n    \"fecha_finalizacion\": \"2023-12-20\",\r\n    \"listaDeTemas\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cursos/editar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursos",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tema",
+			"item": [
+				{
+					"name": "traer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/temas/traer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas",
+								"traer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_mascota\":1,\r\n    \"nombre\":\"Introdción a Java\",\r\n    \"descripcion\":\"Introducciín al Lenguaje de Programación Java\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/temas/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mascotas/borrar/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mascotas",
+								"borrar",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/mascotas/editar/2?id_mascota=1&nombre=Tobi&especie=Perro&raza=cruza calle con vereda&color=marron",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"mascotas",
+								"editar",
+								"2"
+							],
+							"query": [
+								{
+									"key": "id_mascota",
+									"value": "1"
+								},
+								{
+									"key": "nombre",
+									"value": "Tobi"
+								},
+								{
+									"key": "especie",
+									"value": "Perro"
+								},
+								{
+									"key": "raza",
+									"value": "cruza calle con vereda"
+								},
+								{
+									"key": "color",
+									"value": "marron"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
